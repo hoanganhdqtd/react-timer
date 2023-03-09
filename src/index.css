@@ -67,6 +67,8 @@ p {
   padding: 1em;
   justify-content: space-evenly;
   align-items: center;
+
+  margin: auto;
 }
 .button {
   color: white;
@@ -91,7 +93,8 @@ p {
   border: 1px solid var(--text-main-color);
   background-color: var(--text-main-color);
 } */
-@media only screen and (max-device-width: 1280px) {
+
+/* @media only screen and (max-device-width: 1280px) {
   * {
     font-size: 0.9em;
   }
@@ -102,9 +105,43 @@ p {
   .button__wrapper {
     margin: auto;
     width: 100%;
+    flex-wrap: wrap;
   }
   .timer__display > p {
     font-size: 3.8em;
     padding-left: 0;
+  }
+} */
+
+@media only screen and (max-width: 1280px) {
+  * {
+    font-size: 0.9em;
+  }
+  h1 {
+    font-size: 60px;
+    line-height: 0px;
+  }
+  .button__wrapper {
+    margin: auto;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .timer__display > p {
+    font-size: 3.8em;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  h1 {
+    font-size: 30px;
+    line-height: 0px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  h1 {
+    font-size: 20px;
+    line-height: 0px;
   }
 }
